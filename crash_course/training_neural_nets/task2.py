@@ -55,4 +55,8 @@ plt.plot(adam_training_losses, label='Adam training')
 plt.plot(adam_validation_losses, label='Adam validation')
 plt.legend()
 
+# plot histograms of the scaled features
+plt.figure()
+normalized_training_examples.hist(bins=20, figsize=(18, 12), xlabelsize=10)
+
 base.multi_page(base.currentdir + "/task2.pdf")
